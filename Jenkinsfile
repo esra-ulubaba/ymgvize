@@ -34,7 +34,7 @@ pipeline {
         stage('Yeni Container Olusturuluyor') {
             steps {
                 echo "Yeni container olusturuluyor..."
-                sh "docker run -d --name ${CONTAINER_NAME} -p 5050:80 ${IMAGE_NAME}"
+                sh "docker run -d --name ${CONTAINER_NAME} -p 4444:80 ${IMAGE_NAME}"
             }
         }
     }
